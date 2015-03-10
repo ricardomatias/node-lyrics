@@ -1,0 +1,27 @@
+{
+    "parseLyrics": [{
+        "song": "Unluck",
+        "artist": "James Blake",
+        "album": "James Blake",
+        "lyrics": "Treated walls. Care for me. When crossings call out. One of three. Treated walls. Care for me. When crossings call out. One of three. Only child take good care. I wouldn't like you. Playing, falling there. Treated walls. Care for me. When crossings call out. One of three. Treated walls. Care for me. When crossings call out. One of three. Only child take good care. I wouldn't like."
+    }, {
+        "song": "A Rat's Nest",
+        "artist": "Thom Yorke",
+        "album": "Spitting Feathers",
+        "lyrics": "Clicks on the phone. I cannot help you. Caught by own worm. Caught in a rat's nest. Eat own young. Chew through wires. Sewn up in stitches, stitches. Deny all knowledge. Paragraph 5. Subsection b. The committee is content, content. To live in a rat's nest. Rat's nest."
+    }],
+    "getArtist": {
+        "artist": "Local Natives",
+        "albums": [{
+            "album": "Gorilla Manor",
+            "year": "2009",
+            "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Gorilla%20Manor",
+            "songs": ["Wide Eyes", "Airplanes", "Sun Hands", "World News", "Shape Shifter", "Camera Talk", "Cards & Quarters", "Warning Sign", "Who Knows Who Cares", "Cubism Dream", "Stranger Things", "Sticky Thread"]
+        }, {
+            "album": "Hummingbird",
+            "year": "2013",
+            "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Hummingbird",
+            "songs": ["You And I", "Heavy Feet", "Ceilings", "Black Spot", "Breakers", "Three Months", "Black Balloons", "Wooly Mammoth", "Mt. Washington", "Colombia", "Bowery", "Palms", "11:11", "Ingrid"]
+        }]
+    }
+}
