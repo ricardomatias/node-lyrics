@@ -1,4 +1,4 @@
-# node-lyrics [![Build Status](https://travis-ci.org/ricardomatias/node-lyrics?branch=master)](https://travis-ci.org/ricardomatias/node-lyrics)
+# node-lyrics [![Build Status](https://travis-ci.org/ricardomatias/node-lyrics.svg)](https://travis-ci.org/ricardomatias/node-lyrics)
 
 > LyricWikia API client written in node.js
 
@@ -27,9 +27,10 @@ lyrics.getAlbums('Radiohead', function(err, albums) {
 
 ## API
 
-Besides the methods provided by default, I've added 2 new methods.
+Besides the methods provided by default, I've added 2 new methods:
 
-**getAlbums** and **parseLyrics**
+* **getAlbums**
+* **parseLyrics**
 
 ### getAlbums(artist, options, callback)
 
@@ -37,7 +38,9 @@ Fetches the **artist** albums. [Array]
 
 #### options (object)
 
-**Ignore**: none (default), 'Unreleased', 'B-Sides', 'Other Songs'. (string or array)
+**ignore**: none (default), 'Unreleased', 'B-Sides', 'Other Songs'. (string or array)
+
+---
 
 ### getArtist(artist, options, callback)
 
@@ -45,8 +48,10 @@ Gets the **artist** albums. [Object]
 
 #### options (object)
 
-**fmt** (format): JSON (default), XML, HTML
+**fmt** (format): JSON (default), XML, HTML  
 **ignore**: none (default), 'Unreleased', 'B-Sides', 'Other Songs'. (string or array)
+
+---
 
 ### getHometown(artist, options, callback)
 
@@ -56,6 +61,8 @@ Gets the **artist** country, state and hometown info. [Object]
 
 **fmt** (format): JSON (default), XML, HTML
 
+---
+
 ### getSOTD(artist, options, callback)
 
 Returns the song of the day. [Object]
@@ -64,13 +71,7 @@ Returns the song of the day. [Object]
 
 **fmt** (format): JSON (default), XML, HTML
 
-### getTopSongs(artist, options, callback)
-
-Returns the top songs. [Object]
-
-#### options (object)
-
-**fmt** (format): JSON (default), XML, HTML
+---
 
 ### getTopSongs(artist, options, callback)
 
@@ -79,14 +80,18 @@ Returns the top songs. [Object]
 #### options (object)
 
 **fmt** (format): JSON (default), XML, HTML
+
+---
 
 ### getSong(artist, song, options, callback)
 
-Returns the url to the song's lyrics and the lyric's beginning. [Object]
+Returns the URL to the song's lyrics and the lyric's beginning. [Object]
 
 #### options (object)
 
 **fmt** (format): JSON (default), XML, HTML
+
+---
 
 ### parseLyrics(artist, song, callback)
 DISCLAIMER: This method uses web scraping to grab the song's lyrics.
