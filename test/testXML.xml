@@ -23,7 +23,7 @@
 <year>2013</year>
 <amazonLink>http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;tag=wikia-20&amp;camp=1789&amp;creative=9325&amp;path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Hummingbird</amazonLink>
 <songs>
-<item>You And I</item>
+<item>You &amp; I</item>
 <item>Heavy Feet</item>
 <item>Ceilings</item>
 <item>Black Spot</item>
@@ -37,6 +37,38 @@
 <item>Palms</item>
 <item>11:11</item>
 <item>Ingrid</item>
+</songs>
+<album>Sunlit Youth</album>
+<year>2016</year>
+<amazonLink>http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;tag=wikia-20&amp;camp=1789&amp;creative=9325&amp;path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Sunlit%20Youth</amazonLink>
+<songs>
+<item>Villainy</item>
+<item>Past Lives</item>
+<item>Dark Days</item>
+<item>Fountain Of Youth</item>
+<item>Masters</item>
+<item>Jellyfish</item>
+<item>Coins</item>
+<item>Mother Emanuel</item>
+<item>Ellie Alice</item>
+<item>Psycho Lovers</item>
+<item>Everything All At Once</item>
+<item>Sea Of Years</item>
+</songs>
+<album>Violet Street</album>
+<year>2019</year>
+<amazonLink>http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;tag=wikia-20&amp;camp=1789&amp;creative=9325&amp;path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Violet%20Street</amazonLink>
+<songs>
+<item>Vogue</item>
+<item>When Am I Gonna Lose You</item>
+<item>Café Amarillo</item>
+<item>Munich II</item>
+<item>Megaton Mile</item>
+<item>Someday Now</item>
+<item>Shy</item>
+<item>Garden Of Elysian</item>
+<item>Gulf Shores</item>
+<item>Tap Dancer</item>
 </songs>
 </albums>
 </getArtistResponse>

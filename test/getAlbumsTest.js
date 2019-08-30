@@ -3,31 +3,32 @@
 
 'use strict';
 
-var chai = require('chai');
-var expect = chai.expect;
+const chai = require('chai');
+const expect = chai.expect;
 
-var getAlbums = require('../lib/getAlbums');
+const getAlbums = require('../lib/getAlbums');
 
 describe('getAlbums', function() {
-    it('should return an array of albums', function(done) {
-        getAlbums('Local Natives', function(err, albums) {
-            if (err) {
-                return done(err);
-            }
-            expect(albums).to.be.eql(['Gorilla Manor', 'Hummingbird']);
-            done();
-        });
+    it('should return an array of albums', async function() {
+        const albums = await getAlbums('Local Natives');
+
+        expect(albums).to.be.eql([
+            'Gorilla Manor',
+            'Hummingbird',
+            'Sunlit Youth',
+            'Violet Street'
+        ]);
     });
 
-    it('should return an array of albums ignoring one', function(done) {
-        getAlbums('Foals', {
-            ignore: 'Other Songs'
-        }, function(err, albums) {
-            if (err) {
-                return done(err);
-            }
-            expect(albums).to.be.eql(['Antidotes', 'Total Life Forever', 'Holy Fire']);
-            done();
-        });
+    it('should return an array of albums ignoring one', async function() {
+        const albums = await getAlbums('Foals', { ignore: 'Other Songs' });
+
+        expect(albums).to.be.eql([
+            'Antidotes',
+            'Total Life Forever',
+            'Holy Fire',
+            'What Went Down',
+            'Everything Not Saved Will Be Lost - Part 1'
+        ]);
     });
 });

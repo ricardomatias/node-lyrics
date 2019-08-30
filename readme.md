@@ -1,6 +1,6 @@
 # node-lyrics [![Build Status](https://travis-ci.org/ricardomatias/node-lyrics.svg)](https://travis-ci.org/ricardomatias/node-lyrics)
 
-> LyricWikia API client written in node.js
+> Get the lyrics to your favorite songs (via LyricWikia API)
 
 ## Requirements
 
@@ -15,15 +15,22 @@ $ npm install --save node-lyrics
 ## Usage
 
 ```js
-var lyrics = require('node-lyrics');
+const lyrics = require('node-lyrics');
 
-lyrics.getAlbums('Radiohead', function(err, albums) {
-    if (err) {
-        // do something
-    }
-    console.log(albums)
-});
+const albums = await lyrics.getAlbums('Local Natives');
+/*
+[
+    'Gorilla Manor',
+    'Hummingbird',
+    'Sunlit Youth',
+    'Violet Street'
+]
+*/
 ```
+
+## v2
+* Supports Promises!
+* `getTopSongs` was deprecated
 
 ## API
 
@@ -63,19 +70,9 @@ Gets the **artist** country, state and hometown info. [Object]
 
 ---
 
-### getSOTD(artist, options, callback)
+### getSOTD(options, callback)
 
 Returns the song of the day. [Object]
-
-#### options (object)
-
-**fmt** (format): JSON (default), XML, HTML
-
----
-
-### getTopSongs(artist, options, callback)
-
-Returns the top songs. [Object]
 
 #### options (object)
 
@@ -97,6 +94,14 @@ Returns the URL to the song's lyrics and the lyric's beginning. [Object]
 DISCLAIMER: This method uses web scraping to grab the song's lyrics.
 
 Returns the lyrics for the song. [Object]
+
+---
+
+**DEPRECATED**
+
+~~### getTopSongs(artist, options, callback)~~
+
+---
 
 ## License
 

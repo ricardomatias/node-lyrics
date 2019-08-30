@@ -14,18 +14,20 @@ var getArtist = require('../lib/getArtist');
 describe('getArtist', function() {
 
     describe('Errors', function() {
-        it('should return an Error when its called without a name', function(done) {
-            return getArtist('', function(err, artistInfo) {
+        it('should return an Error when its called without a name', async function() {
+            try {
+                await getArtist('');
+            } catch (err) {
                 expect(err.message).to.eql('"artist" cannot be an empty string');
-                done();
-            });
+            }
         });
 
-        it('should return an Error when artist couldn\'t be found or has no records', function(done) {
-            return getArtist('Frodo Baggins', function(err, artistInfo) {
+        it('should return an Error when artist couldn\'t be found or has no records', async function() {
+            try {
+                await getArtist('Frodo Baggins');
+            } catch (err) {
                 expect(err.message).to.eql('Frodo Baggins couldn\'t be found in the api');
-                done();
-            });
+            }
         });
     });
 
@@ -42,14 +44,10 @@ describe('getArtist', function() {
                 });
             });
 
-            it('should return an json response by default', function(done) {
-                return getArtist('Local Natives', function(err, artistInfo) {
-                    if (err) {
-                        return done(err);
-                    }
-                    expect(artistInfo).to.deep.eql(testJSON);
-                    done();
-                });
+            it('should return an json response by default', async function() {
+                const artistInfo = await getArtist('Local Natives');
+
+                expect(artistInfo).to.deep.eql(testJSON);
             });
         });
 
@@ -65,16 +63,12 @@ describe('getArtist', function() {
                 });
             });
 
-            it('should return a valid xml response', function(done) {
-                return getArtist('Local Natives', {
+            it('should return a valid xml response', async function() {
+                const artistInfo = await getArtist('Local Natives', {
                     fmt: 'xml'
-                }, function(err, artistInfo) {
-                    if (err) {
-                        return done(err);
-                    }
-                    expect(artistInfo).to.equal(testXML);
-                    done();
                 });
+
+                expect(artistInfo).to.deep.eql(testXML);
             });
         });
 
@@ -90,16 +84,12 @@ describe('getArtist', function() {
                 });
             });
 
-            it('should return a valid html response', function(done) {
-                return getArtist('Local Natives', {
+            it('should return a valid html response', async function() {
+                const artistInfo = await getArtist('Local Natives', {
                     fmt: 'html'
-                }, function(err, artistInfo) {
-                    if (err) {
-                        return done(err);
-                    }
-                    expect(artistInfo).to.eql(testHTML);
-                    done();
                 });
+
+                expect(artistInfo).to.deep.eql(testHTML);
             });
         });
 

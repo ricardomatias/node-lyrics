@@ -25,15 +25,8 @@ describe('parseLyrics', function() {
     describe('James Blake:Unluck', function() {
         var artistData;
 
-        before(function(done) {
-            parseLyrics('James Blake', 'Unluck', function(err, data) {
-                if (err) {
-                    return done(err);
-                }
-
-                artistData = data;
-                done();
-            });
+        before(async function() {
+            artistData = await parseLyrics('James Blake', 'Unluck');
         });
 
         it('should return an object', function() {
@@ -64,15 +57,8 @@ describe('parseLyrics', function() {
     describe('Thom Yorke:A Rat\'s Nest', function() {
         var artistData;
 
-        before(function(done) {
-            parseLyrics('Thom Yorke', 'A Rat\'s Nest', function(err, data) {
-                if (err) {
-                    return done(err);
-                }
-
-                artistData = data;
-                done();
-            });
+        before(async function() {
+            artistData = await parseLyrics('Thom Yorke', 'A Rat\'s Nest');
         });
 
         it('should return an object', function() {

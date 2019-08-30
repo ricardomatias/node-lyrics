@@ -4,24 +4,18 @@
 
 'use strict';
 
-var chai = require('chai');
-var expect = chai.expect;
+const chai = require('chai');
+const expect = chai.expect;
 
-var getHometown = require('../lib/getHometown');
+const getHometown = require('../lib/getHometown');
 
 describe('getHomeTown', function() {
-    var artistInfo;
+    let artistInfo;
 
-    before(function(done) {
-        getHometown('Radiohead', function(err, data) {
-            if (err) {
-                return done(err);
-            }
-            artistInfo = data;
-            done();
-        });
-
+    before(async function() {
+        artistInfo = await getHometown('Radiohead');
     });
+
     it('should fetch the artist\'s country', function() {
         expect(artistInfo.country).to.eql('England');
     });
@@ -32,15 +26,11 @@ describe('getHomeTown', function() {
         expect(artistInfo.hometown).to.eql('Abingdon');
     });
 
-    it('should match the tag <getHometownResponse> when format is xml', function(done) {
-        getHometown('Radiohead', {
+    it('should match the tag <getHometownResponse> when format is xml', async function() {
+        const data = await getHometown('Radiohead', {
             fmt: 'xml'
-        }, function(err, data) {
-            if (err) {
-                return done(err);
-            }
-            expect(data).to.match(/.*<getHometownResponse>.*/g);
-            done();
         });
+
+        expect(data).to.match(/.*<getHometownResponse>.*/g);
     });
 });

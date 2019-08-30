@@ -1,27 +1,97 @@
 {
-    "parseLyrics": [{
-        "song": "Unluck",
-        "artist": "James Blake",
-        "album": "James Blake",
-        "lyrics": "Treated walls. Care for me. When crossings call out. One of three. Treated walls. Care for me. When crossings call out. One of three. Only child take good care. I wouldn't like you. Playing, falling there. Treated walls. Care for me. When crossings call out. One of three. Treated walls. Care for me. When crossings call out. One of three. Only child take good care. I wouldn't like."
-    }, {
-        "song": "A Rat's Nest",
-        "artist": "Thom Yorke",
-        "album": "Spitting Feathers",
-        "lyrics": "Clicks on the phone. I cannot help you. Caught by own worm. Caught in a rat's nest. Eat own young. Chew through wires. Sewn up in stitches, stitches. Deny all knowledge. Paragraph 5. Subsection b. The committee is content, content. To live in a rat's nest. Rat's nest."
-    }],
+    "parseLyrics": [
+        {
+            "song": "Unluck",
+            "artist": "James Blake",
+            "album": "James Blake",
+            "lyrics": "Treated walls, care for me,\n,When crossings call out one of three,\n,\n,Treated walls care for me,\n,When crossings call out one of three,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Treated walls care for me,\n,When crossings call out one of three,\n,\n,Treated walls care for me,\n,When crossings call out one of three,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,Only child take good care, I wouldn't like you,\n,Playing, falling there,\n,\n,Only child take good care, I wouldn't like you,\n,Playing, falling,\n,Only child take good care, I wouldn't like you,\n,Playing"
+        },
+        {
+            "song": "A Rat's Nest",
+            "artist": "Thom Yorke",
+            "album": "Spitting Feathers",
+            "lyrics": "Clicks on the phone,\n,I cannot help you,\n,Caught by own worm,\n,Caught in a rat's nest,\n,\n,Eat own young,\n,Chew through wires,\n,Sewn up in stitches, stitches,\n,Deny all knowledge,\n,Paragraph 5,\n,Subsection b,\n,The committee is content, content,\n,To live in a rat's nest,\n,Rat's nest"
+        }
+    ],
     "getArtist": {
         "artist": "Local Natives",
-        "albums": [{
-            "album": "Gorilla Manor",
-            "year": "2009",
-            "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Gorilla%20Manor",
-            "songs": ["Wide Eyes", "Airplanes", "Sun Hands", "World News", "Shape Shifter", "Camera Talk", "Cards & Quarters", "Warning Sign", "Who Knows Who Cares", "Cubism Dream", "Stranger Things", "Sticky Thread"]
-        }, {
-            "album": "Hummingbird",
-            "year": "2013",
-            "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Hummingbird",
-            "songs": ["You And I", "Heavy Feet", "Ceilings", "Black Spot", "Breakers", "Three Months", "Black Balloons", "Wooly Mammoth", "Mt. Washington", "Colombia", "Bowery", "Palms", "11:11", "Ingrid"]
-        }]
+        "albums": [
+            {
+                "album": "Gorilla Manor",
+                "year": "2009",
+                "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Gorilla%20Manor",
+                "songs": [
+                    "Wide Eyes",
+                    "Airplanes",
+                    "Sun Hands",
+                    "World News",
+                    "Shape Shifter",
+                    "Camera Talk",
+                    "Cards & Quarters",
+                    "Warning Sign",
+                    "Who Knows Who Cares",
+                    "Cubism Dream",
+                    "Stranger Things",
+                    "Sticky Thread"
+                ]
+            },
+            {
+                "album": "Hummingbird",
+                "year": "2013",
+                "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Hummingbird",
+                "songs": [
+                    "You & I",
+                    "Heavy Feet",
+                    "Ceilings",
+                    "Black Spot",
+                    "Breakers",
+                    "Three Months",
+                    "Black Balloons",
+                    "Wooly Mammoth",
+                    "Mt. Washington",
+                    "Colombia",
+                    "Bowery",
+                    "Palms",
+                    "11:11",
+                    "Ingrid"
+                ]
+            },
+            {
+                "album": "Sunlit Youth",
+                "year": "2016",
+                "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Sunlit%20Youth",
+                "songs": [
+                    "Villainy",
+                    "Past Lives",
+                    "Dark Days",
+                    "Fountain Of Youth",
+                    "Masters",
+                    "Jellyfish",
+                    "Coins",
+                    "Mother Emanuel",
+                    "Ellie Alice",
+                    "Psycho Lovers",
+                    "Everything All At Once",
+                    "Sea Of Years"
+                ]
+            },
+            {
+                "album": "Violet Street",
+                "year": "2019",
+                "amazonLink": "http://www.amazon.com/exec/obidos/redirect?link_code=ur2&tag=wikia-20&camp=1789&creative=9325&path=external-search%3Fsearch-type=ss%26index=music%26keyword=Local%20Natives%20Violet%20Street",
+                "songs": [
+                    "Vogue",
+                    "When Am I Gonna Lose You",
+                    "Café Amarillo",
+                    "Munich II",
+                    "Megaton Mile",
+                    "Someday Now",
+                    "Shy",
+                    "Garden Of Elysian",
+                    "Gulf Shores",
+                    "Tap Dancer"
+                ]
+            }
+        ]
     }
 }
