@@ -7,7 +7,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const {getSOTD, getTopSongs } = require('../lib/getRanks');
+const { getSOTD } = require('../');
 
 describe('getSOTD', function() {
     it('should at least return the keys of artist, song, lyrics from json', async function() {

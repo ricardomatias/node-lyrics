@@ -6,7 +6,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const getSong = require('../lib/getSong');
+const { getSong } = require('../');
 
 describe('getSong', function() {
     it('should return the url to the lyrics page in json', async function() {

@@ -7,7 +7,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const getHometown = require('../lib/getHometown');
+const { getHometown } = require('../');
 
 describe('getHomeTown', function() {
     let artistInfo;

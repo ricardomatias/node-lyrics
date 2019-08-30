@@ -8,7 +8,7 @@ var chai = require('chai');
 var expect = chai.expect;
 var fs = require('fs');
 
-var parseLyrics = require('../lib/parseLyrics');
+var { parseLyrics } = require('../');
 
 describe('parseLyrics', function() {
     var testData;

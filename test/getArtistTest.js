@@ -9,7 +9,7 @@ var chai = require('chai');
 var expect = chai.expect;
 
 
-var getArtist = require('../lib/getArtist');
+var { getArtist } = require('../');
 
 describe('getArtist', function() {
 

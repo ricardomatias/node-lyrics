@@ -6,7 +6,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const getAlbums = require('../lib/getAlbums');
+const { getAlbums } = require('../');
 
 describe('getAlbums', function() {
     it('should return an array of albums', async function() {

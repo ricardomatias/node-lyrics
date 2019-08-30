@@ -12,6 +12,10 @@
         "test": "mocha test"
     },
     "engine": "node >= 8.0.0",
+    "files": [
+        "index.js",
+        "lib"
+    ],
     "keywords": [
         "lyrics",
         "wikia",
