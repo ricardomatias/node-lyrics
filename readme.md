@@ -1,4 +1,4 @@
-# node-lyrics [![Build Status](https://travis-ci.org/ricardomatias/node-lyrics.svg)](https://travis-ci.org/ricardomatias/node-lyrics)
+# node-lyrics
 
 > Get the lyrics to your favorite songs (via LyricWikia API)
 
