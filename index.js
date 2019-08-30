@@ -1,9 +1,15 @@
+const utils = require('./lib/utils');
+const getAlbums = require('./lib/getAlbums');
+const getArtist = require('./lib/getArtist');
+const getHometown = require('./lib/getHometown');
+const { getSOTD } = require('./lib/getRanks');
+const parseLyrics = require('./lib/parseLyrics');
+
 module.exports = {
-    getAlbums: require('./lib/getAlbums'),
-    getArtist: require('./lib/getArtist'),
-    getHometown: require('./lib/getHometown'),
-    getSOTD: require('./lib/getRanks').getSOTD,
-    getTopSongs: require('./lib/getRanks').getTopSongs,
-    getSong: require('./lib/getSong'),
-    parseLyrics: require('./lib/parseLyrics')
+    getAlbums,
+    getArtist,
+    getHometown,
+    getSOTD,
+    getSong,
+    parseLyrics,
 }
