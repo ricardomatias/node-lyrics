@@ -10,6 +10,10 @@
 
 ```
 $ npm install --save node-lyrics
+
+# OR (CLI)
+
+$ npm install --global node-lyrics
 ```
 
 ## Usage
@@ -26,6 +30,17 @@ const albums = await lyrics.getAlbums('Local Natives');
     'Violet Street'
 ]
 */
+```
+
+## Usage CLI
+
+```bash
+$ lyrics "james blake" retrograde
+# > james blake - retrograde [Overgrown]
+
+# > You're on your own,
+# > In a world you've grown,
+# > ...
 ```
 
 ## v2
