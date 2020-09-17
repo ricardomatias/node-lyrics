@@ -1,6 +1,6 @@
 {
     "name": "node-lyrics",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "description": "Get the lyrics to your favorite songs",
     "main": "index.js",
     "author": {
