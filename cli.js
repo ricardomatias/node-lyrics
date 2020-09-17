@@ -1,4 +1,4 @@
-#!/usr/bin/env node --no-warnings
+#!/usr/bin/env node
 
 const { Readable } = require('stream');
 const meow = require('meow');
